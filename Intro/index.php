@@ -33,8 +33,61 @@
     true <=> false;  //  1
     false <=> true;  // -1
     false <=> false; //  0
+//---------------------------
+
+    $arr = array("asdf", "sdafd", "sdfa");
+    $arr[] = "sdaf";
+    for ($i=0; $i < count($arr); $i++) { 
+        echo "{$arr[$i]}<br/>";
+    }
+
+    $arr = array(
+        "asdf" => "asd",
+        "sdafd" => "asdf",
+        "sdfa" => "asdfd");
+
+    $arr['asdf'] = 'Phalanger';
+    unset($arr['asdf']);
+    foreach ($arr as $key => $value) {
+        echo "$key knows $val <br/>";
+    }
+    print_r($arr);
+    var_dump($arr);
+    $arr = array_values($arr); // for reset index
+
+//------------------------------------------------------
+
+    function foo(string $name, int $age): string {
+        return "$name of $age years";
+    }
+
+    function foo1(int &$age) {
+        $age = 10;
+    }
+
+    $f = 'foo';
+    $a = 0;
+    $f($a);
+    echo $a;
 
     ?>
+<!----------------------------------------->
+
+<?php 
+
+$str = "asdfsadf sadf sadf asdf sadf sd";
+$words = explode(' ', $str);
+$glued = implode('_', $words);
+
+//------------------------------------------
+
+
+$di = new DirectoryIterator("C:/");
+while($di->valid) {
+    
+}
+
+?>
 <!----------------------------------------->
 
 <?php
