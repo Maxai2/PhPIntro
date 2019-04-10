@@ -21,7 +21,8 @@ class MySqlRepository implements IRepository {
 
     public function get(): array {
         $query = 'SELECT * FROM books';
-        $res = mysqli_query($this->__db, $query);
+        // $res = mysqli_query($this->__db, $query);
+        $res = $this->__db->query($query);
 
         $books = [];
         while($row = mysqli_fetch_array($res)) {
