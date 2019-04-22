@@ -1,0 +1,14 @@
+-- composer like npm/nuget package
+
+composer selfupdate
+composer init
+composer require carbondate/carbon
+composer global require laravel/installer
+
+laravel new --proj name
+-- laravel extension pack
+
+php artisan make:controller BooksController
+php artisan make:provider FakeBooksServiceProvider
+
+ul>il*5 || emet

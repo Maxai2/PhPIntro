@@ -1,7 +1,7 @@
 <?php
 
 namespace Data;
-require_once './Models/oop.php';
+require_once dirname(__DIR__).'./Models/oop.php'; // whole path dirname
 use \Models\Book;
 
 interface IRepository {
