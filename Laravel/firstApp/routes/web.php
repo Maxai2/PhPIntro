@@ -17,6 +17,6 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('books', 'BooksController@index');
+Route::get('books', 'BooksController@index')->middleware('demo');
 Route::get('books/{id}', 'BooksController@find');
 // Route::post('books', 'BooksController@insert');

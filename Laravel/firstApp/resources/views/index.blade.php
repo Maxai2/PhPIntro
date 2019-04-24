@@ -4,7 +4,7 @@
     @if (count($books) > 0)
         <ul>
             @foreach ($books as $book)
-                <li>{{$book}}</li>
+                <li>{{$book->title}}</li>
             @endforeach
             <hr>
             <?php

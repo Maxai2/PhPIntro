@@ -2,7 +2,7 @@
     namespace App\Abstractions;
 
     interface IBooksService {
-        public function get() : array;
+        public function get();
         public function find(int $id) : string;
     }
 ?>

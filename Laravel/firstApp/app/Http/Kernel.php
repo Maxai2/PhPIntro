@@ -19,6 +19,7 @@ class Kernel extends HttpKernel
         \App\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \App\Http\Middleware\TrustProxies::class,
+        // \App\Http\Middleware\DemoMiddleware::class,
     ];
 
     /**
@@ -60,6 +61,7 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        'demo' => \App\Http\Middleware\DemoMiddleware::class,
     ];
 
     /**
@@ -70,6 +72,7 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $middlewarePriority = [
+        App\Http\Middleware\DemoMiddleware::class,
         \Illuminate\Session\Middleware\StartSession::class,
         \Illuminate\View\Middleware\ShareErrorsFromSession::class,
         \App\Http\Middleware\Authenticate::class,
