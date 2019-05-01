@@ -6,7 +6,11 @@
 
     class Book extends Model
     {
-
+        protected $fillable = [ // access only this param
+            'title',
+            'author',
+            'pages'
+        ];
     }
 
 ?>

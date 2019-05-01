@@ -19,9 +19,10 @@ after git
 create folder in database/factories
 .env create and copy
 
-composer update
-composer dump-autoload
-composer intall
+// composer update
+// composer dump-autoload
+// composer install
+composer require
 
 php artisan migrate
 php artisan key:generate

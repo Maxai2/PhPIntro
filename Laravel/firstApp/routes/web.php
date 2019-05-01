@@ -18,5 +18,8 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('books', 'BooksController@index')->middleware('demo');
+Route::get('books/create', 'BooksController@create');
+Route::post('books/create', 'BooksController@store');
 Route::get('books/{id}', 'BooksController@find');
+
 // Route::post('books', 'BooksController@insert');
