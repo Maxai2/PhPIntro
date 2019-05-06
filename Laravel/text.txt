@@ -5,11 +5,16 @@ composer init
 composer require carbondate/carbon
 composer global require laravel/installer
 
-laravel new --proj name
+laravel new name
 -- laravel extension pack
 
 php artisan make:controller BooksController
 php artisan make:provider FakeBooksServiceProvider
+php artisan make:auth
+
+config/database.php -> utf8bin
+
+php artisan route:list
 
 ul>il*5 || emet
 
