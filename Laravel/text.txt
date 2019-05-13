@@ -12,6 +12,16 @@ php artisan make:controller BooksController
 php artisan make:provider FakeBooksServiceProvider
 php artisan make:auth
 
+php artisan make:controller BooksController --resource // CRUD panel api.php Route::resource('books', 'BooksController');
+php artisan make:controller BooksController --api
+php artisan make:controller BooksController --api --model=Book
+php artisan make:model Book -m
+
+public function destroy(Book $book)
+    {
+        $book->delete(); // and thats all
+    }
+
 config/database.php -> utf8bin
 
 php artisan route:list
