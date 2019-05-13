@@ -28,6 +28,8 @@ php artisan route:list
 
 ul>il*5 || emet
 
+php artisan tinker // debugger
+
 ----------------------------------
 after git
 
