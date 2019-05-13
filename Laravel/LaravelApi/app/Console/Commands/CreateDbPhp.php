@@ -13,7 +13,7 @@ class CreateDbPhp extends Command
      *
      * @var string
      */
-    protected $signature = 'db:create';
+    protected $signature = 'db:create {name?}';
 
     /**
      * The console command description.
